@@ -10,10 +10,13 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import Rating from "../components/Rating";
+// Action
 import { listProductDetails } from "../actions/productActions";
+// Components
 import Loader from "../components/Loader";
 import Message from "../components/Message";
+import Rating from "../components/Rating";
+
 const ProductScreen = ({ match, history }) => {
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
