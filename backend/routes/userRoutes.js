@@ -10,6 +10,6 @@ import { protect } from "../middleware/authMiddleware.js";
 
 router.post("/login", authUser);
 router.get("/profile", protect, getUserProfile);
-router.post("/", registerNewUser);
+router.route("/register").post(registerNewUser);
 
 export default router;
